@@ -1,0 +1,30 @@
+set fenc=utf-8
+set nowritebackup
+set nobackup
+set incsearch
+
+" view
+set term=xterm-256color
+syntax enable
+set number
+set cursorline
+set showcmd
+set binary noeol
+set showmatch matchtime=1
+set laststatus=2
+set noshowmode
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'itchyny/lightline.vim'
+Plug 'osyo-manga/vim-over'
+call plug#end()
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+augroup QuickFixCmd
+  autocmd!
+  autocmd QuickFixCmdPost *grep* cwindow
+augroup END
