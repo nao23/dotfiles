@@ -1,6 +1,5 @@
 # Common
 export ZSHDIR="$(dirname $(readlink ${(%):-%N}))/zsh"
-
 source $ZSHDIR/common.zsh
 
 # direnv
