@@ -1,5 +1,5 @@
 # dotfiles
-my configuration files 
+my configuration files :gear:
 
 ## Prerequisites
 * zsh
