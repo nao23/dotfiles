@@ -3,20 +3,6 @@ export ZSHDIR="$(dirname $(readlink ${(%):-%N}))/zsh"
 
 source $ZSHDIR/common.zsh
 
-# Golang
-#export GOENV_ROOT=$HOME/.goenv
-#export PATH=$GOENV_ROOT/bin:$PATH
-#eval "$(goenv init -)"
-#export GOPATH=$HOME/go
-
-# Python
-#export PYENV_ROOT=$HOME/.pyenv
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-
-# Ruby
-#eval "$(rbenv init -)"
-
 # direnv
 eval "$(direnv hook zsh)"
 
