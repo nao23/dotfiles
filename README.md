@@ -9,7 +9,7 @@ my configuration files
 ## Install
 
 ```shell
-$ git clone git@github.com:nao23/dotfiles.git ~/src/github.com/nao23/dotfiles
-$ brew bundle --file ~/src/github.com/nao23/dotfiles/Brewfile
-$ env RCRC=~/src/github.com/nao23/dotfiles/rcrc rcup -v
+$ git clone git@github.com:nao23/dotfiles.git ~/src/github.com/nao23/dotfiles && cd $_
+$ brew bundle --file Brewfile
+$ env RCRC=rcrc rcup -v
 ```
