@@ -10,6 +10,6 @@ my configuration files :gear:
 
 ```shell
 $ git clone git@github.com:nao23/dotfiles.git ~/src/github.com/nao23/dotfiles && cd $_
-$ brew bundle --file Brewfile
+$ brew bundle
 $ env RCRC=rcrc rcup -v
 ```
