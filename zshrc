@@ -1,6 +1,4 @@
-# Common
 export ZSHDIR="$(dirname $(readlink ${(%):-%N}))/zsh"
-source $ZSHDIR/common.zsh
 
 # direnv
 eval "$(direnv hook zsh)"
@@ -50,6 +48,7 @@ zinit light djui/alias-tips
 zinit light zsh-users/zsh-completions
 
 # Load other configuration
+source $ZSHDIR/common.zsh
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
 source $ZSHDIR/bindkeys.zsh
