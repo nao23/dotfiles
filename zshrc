@@ -1,4 +1,6 @@
+# Common
 export ZSHDIR="$(dirname $(readlink ${(%):-%N}))/zsh"
+source $ZSHDIR/common.zsh
 
 # Zinit
 ## initialization
@@ -14,12 +16,15 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 ## plugins
+### Completions
+#### NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as fast-syntax-highlighting!!
+zinit light Aloxaf/fzf-tab 
+
 ### Syntax
 zinit light zdharma/fast-syntax-highlighting
 
 ### Utils
 zinit light mollifier/anyframe
-
 
 ### Prompt
 zinit ice from"gh-r" as"program" pick"**/starship" atload"eval \$(starship init zsh)"
@@ -41,14 +46,10 @@ zinit light dandavison/delta
 zinit snippet 'OMZ::plugins/git/git.plugin.zsh'
 zinit light djui/alias-tips
 
-### Completions
-zinit light zsh-users/zsh-completions
-
 # direnv
 eval "$(direnv hook zsh)"
 
 # Load other custom configuration
-source $ZSHDIR/common.zsh
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
 source $ZSHDIR/bindkeys.zsh
