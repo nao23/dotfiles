@@ -19,7 +19,6 @@ zinit light zdharma/fast-syntax-highlighting
 
 ### Utils
 zinit light mollifier/anyframe
-zinit light Aloxaf/fzf-tab
 
 
 ### Prompt
