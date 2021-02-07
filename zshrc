@@ -19,6 +19,8 @@ zinit light zdharma/fast-syntax-highlighting
 
 ### Utils
 zinit light mollifier/anyframe
+zinit light Aloxaf/fzf-tab
+
 
 ### Prompt
 zinit ice from"gh-r" as"program" pick"**/starship" atload"eval \$(starship init zsh)"
