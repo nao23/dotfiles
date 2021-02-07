@@ -1,8 +1,5 @@
 export ZSHDIR="$(dirname $(readlink ${(%):-%N}))/zsh"
 
-# direnv
-eval "$(direnv hook zsh)"
-
 # Zinit
 ## initialization
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -39,7 +36,6 @@ zinit light ogham/exa
 zinit ice from"gh-r" as"program" mv"delta* -> delta" pick"delta/delta"
 zinit light dandavison/delta
 
-
 ### Aliases
 zinit snippet 'OMZ::plugins/git/git.plugin.zsh'
 zinit light djui/alias-tips
@@ -47,7 +43,10 @@ zinit light djui/alias-tips
 ### Completions
 zinit light zsh-users/zsh-completions
 
-# Load other configuration
+# direnv
+eval "$(direnv hook zsh)"
+
+# Load other custom configuration
 source $ZSHDIR/common.zsh
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
