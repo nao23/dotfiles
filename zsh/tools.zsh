@@ -8,3 +8,8 @@ export BAT_PAGER='never'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 ## delta
 export DELTA_PAGER='less'
+## findutils/coreutils
+export PATH=/usr/local/opt/findutils/libexec/gnubin:${PATH}
+export MANPATH=/usr/local/opt/findutils/libexec/gnuman:${MANPATH}
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}

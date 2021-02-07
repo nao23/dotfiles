@@ -5,9 +5,6 @@ source $ZSHDIR/common.zsh
 # direnv
 eval "$(direnv hook zsh)"
 
-# for macOS
-source $ZSHDIR/macos.zsh
-
 # Zinit
 ## initialization
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
