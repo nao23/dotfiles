@@ -17,6 +17,7 @@ autoload -Uz _zinit
 
 ## plugins
 ### Completions
+zinit light chr-fritz/docker-completion.zshplugin
 #### NOTE: fzf-tab needs to be loaded after compinit, but before plugins which will wrap widgets, such as fast-syntax-highlighting!!
 zinit light Aloxaf/fzf-tab 
 
