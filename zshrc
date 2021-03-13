@@ -52,6 +52,9 @@ zinit light djui/alias-tips
 # direnv
 eval "$(direnv hook zsh)"
 
+# asdf
+source $(brew --prefix asdf)/asdf.sh
+
 # Load other custom configuration
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
