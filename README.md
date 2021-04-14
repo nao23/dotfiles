@@ -1,7 +1,7 @@
 # dotfiles
 my configuration files :gear:
 
-## Prerequisites
+## Requirements 
 * zsh
 * homebrew
 * git
