@@ -4,8 +4,5 @@ truncation_length = 8
 [cmd_duration]
 disabled = true
 
-[aws]
-disabled = true
-
 [terraform]
 disabled = true
