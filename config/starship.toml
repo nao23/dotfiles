@@ -4,5 +4,8 @@ truncation_length = 8
 [cmd_duration]
 disabled = true
 
+[aws]
+format = 'on [$symbol($profile )]($style)'
+
 [terraform]
 disabled = true
