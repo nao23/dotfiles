@@ -15,3 +15,5 @@ export PATH=/usr/local/opt/coreutils/libexec/gnubin:${PATH}
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 ## direnv
 export DIRENV_WARN_TIMEOUT=100s
+## poetry
+export PATH="$HOME/.poetry/bin:$PATH"
