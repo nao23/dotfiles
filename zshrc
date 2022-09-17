@@ -26,22 +26,6 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 ### Utils
 zinit light mollifier/anyframe
 
-### Prompt
-zinit ice from"gh-r" as"program" pick"**/starship" atload"eval \$(starship init zsh)"
-zinit light starship/starship
-
-### Program
-zinit ice from"gh-r" as"program" pick'ghq*/ghq'
-zinit light x-motemen/ghq
-zinit ice from"gh-r" as"program"
-zinit light junegunn/fzf-bin
-zinit ice as"command" from"gh-r" pick"bat*/bat"
-zinit light sharkdp/bat
-zinit ice from"gh-r" as"program" pick"bin/exa"
-zinit light ogham/exa
-zinit ice from"gh-r" as"program" mv"delta* -> delta" pick"delta/delta"
-zinit light dandavison/delta
-
 ### Aliases
 zinit snippet 'OMZ::plugins/git/git.plugin.zsh'
 zinit light djui/alias-tips
@@ -49,8 +33,11 @@ zinit light djui/alias-tips
 # direnv
 eval "$(direnv hook zsh)"
 
+# starship
+eval "$(starship init zsh)"
+
 # asdf
-source $(brew --prefix asdf)/asdf.sh
+#source $(brew --prefix asdf)/asdf.sh
 
 # Load other custom configuration
 source $ZSHDIR/tools.zsh
