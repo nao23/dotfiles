@@ -44,3 +44,4 @@ source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
 source $ZSHDIR/bindkeys.zsh
 
+### End of Zinit's installer chunk
