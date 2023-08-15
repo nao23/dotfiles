@@ -40,5 +40,6 @@ eval "$(starship init zsh)"
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
 source $ZSHDIR/bindkeys.zsh
+source $ZSHDIR/local/*.zsh
 
 ### End of Zinit's installer chunk
