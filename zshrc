@@ -36,9 +36,6 @@ eval "$(direnv hook zsh)"
 # starship
 eval "$(starship init zsh)"
 
-# asdf
-#source $(brew --prefix asdf)/asdf.sh
-
 # Load other custom configuration
 source $ZSHDIR/tools.zsh
 source $ZSHDIR/aliases.zsh
