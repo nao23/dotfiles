@@ -18,6 +18,7 @@ setopt share_history
 setopt append_history
 setopt inc_append_history
 setopt hist_no_store
+setopt no_flow_control
 autoload -U compinit
 compinit
 autoload -Uz edit-command-line
