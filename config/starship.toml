@@ -74,6 +74,7 @@ disabled = true
 
 [aws]
 format = 'on [$symbol($profile )]($style)'
+force_display = true
 
 [terraform]
 disabled = true
@@ -81,3 +82,4 @@ disabled = true
 [kubernetes]
 disabled = false
 format = '[⛵ $context](green) '
+
