@@ -2,3 +2,4 @@
 *.swp
 .tool-versions
 .envrc
+.venv
