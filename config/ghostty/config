@@ -1,0 +1,16 @@
+theme = Chester
+macos-titlebar-proxy-icon = hidden
+maximize = true
+
+font-family = "Menlo for Powerline"
+font-size = 14
+cursor-style = bar
+cursor-style-blink = true
+shell-integration-features = no-cursor
+
+keybind = super+r=clear_screen
+keybind = super+f=clear_screen
+
+unfocused-split-fill = Dark Gray
+split-divider-color = White
+
