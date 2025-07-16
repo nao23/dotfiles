@@ -17,3 +17,5 @@ export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}
 export DIRENV_WARN_TIMEOUT=100s
 ## poetry
 export PATH="$HOME/.local/bin:$PATH"
+## docker (rancher desktop)
+export PATH="$HOME/.rd/bin:$PATH"
