@@ -18,4 +18,5 @@ brew "eza"
 brew "bat"
 brew "git-delta"
 cask "font-menlo-for-powerline"
+cask "ghostty"
 
