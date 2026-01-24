@@ -1,14 +1,15 @@
-theme = Chester
+theme = GitLab Dark
 macos-titlebar-proxy-icon = hidden
 maximize = true
 
 font-family = Menlo for Powerline
 font-size = 14
+adjust-cell-height = 20%
 cursor-style = bar
 cursor-style-blink = true
 shell-integration-features = no-cursor
 
-keybind = super+r=clear_screen
+keybind = unconsumed:super+r=text:\x0c
 
 unfocused-split-fill = Dark Gray
 split-divider-color = White
